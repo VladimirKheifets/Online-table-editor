@@ -1,0 +1,31 @@
+/*
+  CSS tableEditor
+  Version: 1.0, 2024-01-01
+  Author: Vladimir Kheifets (vladimir.kheifets@online.de)
+  Copyright (c) 2024 Vladimir Kheifets All Rights Reserved
+*/
+
+table{
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+td{
+  padding:0 2 0 2;
+  text-align: center;
+  width: 50px;
+}
+
+td + td{
+  width: 150px;
+}
+
+input[type="text"]{
+  border-width:0px;
+  border:none;
+}
+
+p input{
+  width: 150px;
+  margin: 20 20 0 20;
+}
