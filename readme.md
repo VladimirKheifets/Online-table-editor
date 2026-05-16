@@ -104,7 +104,7 @@ foreach($tableRows as $iRow => $tableRow)
 <?PHP
 class dbTools{
   private $table;
-  private $sonnect;
+  private $connect;
   private $keyName;
   public $fieldsName;
   public $columns;
