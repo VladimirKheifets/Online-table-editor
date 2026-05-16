@@ -1,8 +1,8 @@
 /*
   JS script tableEditor
-  Version: 1.0, 2024-01-01
+  Version: 2.0, 2026-05-16
   Author: Vladimir Kheifets (vladimir.kheifets@online.de)
-  Copyright (c) 2024 Vladimir Kheifets All Rights Reserved
+  Copyright (c) 2026 Vladimir Kheifets All Rights Reserved
 */
 window.addEventListener("load", () => {
   msg1 = "Do you really want to delete the table rows?";
@@ -33,8 +33,12 @@ window.addEventListener("load", () => {
       {
         noCheked = false;
         r = checkEl[i].parentNode.parentNode.rowIndex;
-        if(checkEl[i].value == 0)
+        if(checkEl[i].value == 0){
           table.deleteRow(r);
+          checkCount = checkEl.length;
+          if(checkCount==1)
+            addRow();
+        }
         else
           goSubmit = true;
       }
